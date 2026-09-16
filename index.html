@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Great Garage Floors 4 U | Premium Garage Floor Coatings</title>
+  <meta name="description" content="High-strength garage floor coatings designed to resist wear, stains and heavy traffic across the Twin Cities.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Swiper -->
+  
+
+  <style>
+    :root{
+      --black:#080808;
+      --black-2:#111111;
+      --yellow:#ffd21c;
+      --yellow-2:#ffb800;
+      --white:#fff;
+      --muted:#a7a7a7;
+      --line:rgba(255,255,255,.1);
+      --radius:20px;
+      --shadow:0 22px 60px rgba(0,0,0,.28);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:#f7f7f5;color:#111;font-family:Inter,Arial,sans-serif;
+      overflow-x:hidden;
+    }
+    h1,h2,h3,h4,h5,.display-font{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.01em}
+    a{text-decoration:none}
+    .topbar{background:var(--yellow);color:#050505;font-size:.85rem;font-weight:800;letter-spacing:.03em}
+    .topbar a{color:#050505}
+    .navbar{background:rgba(8,8,8,.94)!important;backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .navbar-brand{font-family:"Barlow Condensed";font-size:1.65rem;font-weight:800;color:#fff!important;letter-spacing:.02em}
+    .brand-mark{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--yellow);color:#080808;clip-path:polygon(50% 0,100% 100%,0 100%);margin-right:8px;font-size:1rem}
+    .nav-link{color:#d6d6d6!important;font-weight:700;font-size:.86rem;text-transform:uppercase}
+    .nav-link:hover{color:var(--yellow)!important}
+    .btn-warning-custom{background:var(--yellow);color:#070707;border:0;font-weight:900;text-transform:uppercase;padding:.9rem 1.3rem;border-radius:8px;box-shadow:0 8px 24px rgba(255,210,28,.18)}
+    .btn-warning-custom:hover{background:#ffe15b;color:#000;transform:translateY(-2px)}
+    .btn-dark-outline{border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:800;text-transform:uppercase;padding:.85rem 1.25rem;border-radius:8px}
+    .btn-dark-outline:hover{border-color:var(--yellow);color:var(--yellow)}
+    .hero{position:relative;min-height:88vh;background:#090909;color:#fff;display:flex;align-items:center;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.75) 45%,rgba(0,0,0,.25) 100%),url("https://greatgaragefloors4u.com/wp-content/uploads/2026/06/IMG_3953-scaled.jpeg") center/cover no-repeat;filter:saturate(.9)}
+    .hero:after{content:"";position:absolute;right:-120px;bottom:-170px;width:560px;height:560px;border:90px solid rgba(255,210,28,.1);border-radius:50%}
+    .hero-content{position:relative;z-index:2;padding:100px 0 80px}
+    .eyebrow{display:inline-flex;gap:.55rem;align-items:center;color:var(--yellow);font-weight:900;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem}
+    .eyebrow:before{content:"";width:34px;height:3px;background:var(--yellow)}
+    .hero h1{font-size:clamp(3.7rem,8vw,7.7rem);line-height:.84;margin:0 0 1.4rem;font-weight:800;max-width:900px}
+    .hero h1 span{color:var(--yellow)}
+    .hero p{font-size:1.05rem;line-height:1.8;color:#ddd;max-width:640px}
+    .hero-badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .badge-dark{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);padding:10px 13px;border-radius:999px;font-size:.78rem;font-weight:800}
+    .section{padding:100px 0}
+    .section-dark{background:var(--black);color:#fff}
+    .section-yellow{background:var(--yellow);color:#080808}
+    .section-kicker{color:#9b9b9b;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+    .section-dark .section-kicker{color:var(--yellow)}
+    .section-title{font-size:clamp(2.7rem,5vw,5rem);line-height:.92;font-weight:800;margin:.4rem 0 1.2rem}
+    .section-copy{color:#666;max-width:720px;line-height:1.8}
+    .section-dark .section-copy{color:#aaa}
+    .stats-strip{margin-top:-1px;background:#0d0d0d;color:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .stat{padding:28px 12px;border-right:1px solid var(--line);height:100%}
+    .stat:last-child{border-right:0}
+    .stat strong{font-family:"Barlow Condensed";font-size:3rem;line-height:.9;color:var(--yellow)}
+    .stat span{display:block;text-transform:uppercase;font-size:.72rem;font-weight:800;color:#aaa;margin-top:7px}
+    .card-premium{height:100%;background:#fff;border:1px solid #e7e7e7;border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.06);transition:.35s}
+    .card-premium:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+    .service-img{height:260px;object-fit:cover;width:100%}
+    .card-body-custom{padding:28px}
+    .icon-box{width:58px;height:58px;border-radius:14px;background:#111;color:var(--yellow);display:grid;place-items:center;font-size:1.35rem;margin-bottom:18px}
+    .process-card{height:100%;background:#111;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:30px;position:relative;overflow:hidden}
+    .process-card:after{content:"";position:absolute;right:-35px;top:-35px;width:120px;height:120px;border-radius:50%;background:rgba(255,210,28,.08)}
+    .step{font-family:"Barlow Condensed";font-size:4rem;color:var(--yellow);line-height:.8}
+    .process-card h3{font-size:1.6rem;margin-top:25px}
+    .process-card p{color:#aaa;line-height:1.7;margin:0}
+    .project-img{height:330px;width:100%;object-fit:cover;border-radius:18px;display:block}
+    .project-wrap{position:relative;overflow:hidden;border-radius:18px}
+    .project-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}
+    .project-label{position:absolute;z-index:2;left:22px;bottom:20px;color:#fff;font-family:"Barlow Condensed";font-size:1.5rem;text-transform:uppercase}
+    .before-after img{width:100%;height:350px;object-fit:cover;border-radius:18px}
+    .benefit{padding:26px 0;border-bottom:1px solid #252525;display:flex;gap:18px}
+    .benefit:last-child{border-bottom:0}
+    .benefit i{color:var(--yellow);font-size:1.35rem;margin-top:5px}
+    .benefit h4{margin:0 0 5px;font-size:1.35rem}
+    .benefit p{margin:0;color:#aaa;line-height:1.7}
+    .review-card{background:#151515;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:30px;height:100%}
+    .stars{color:var(--yellow);letter-spacing:3px}
+    .review-card p{color:#d0d0d0;line-height:1.75;margin:18px 0}
+    .review-name{font-weight:900}
+    .review-city{font-size:.78rem;color:#888;text-transform:uppercase}
+    .faq .accordion-item{border:0;border-bottom:1px solid #ddd;border-radius:0!important;background:transparent}
+    .faq .accordion-button{background:transparent;box-shadow:none;padding:22px 0;font-family:"Barlow Condensed";font-size:1.5rem;text-transform:uppercase}
+    .faq .accordion-button:not(.collapsed){color:#111}
+    .faq .accordion-body{padding:0 0 22px;color:#666;line-height:1.8}
+    .quote-box{background:#0a0a0a;color:#fff;border-radius:26px;padding:48px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .quote-box:before{content:"";position:absolute;inset:auto -120px -180px auto;width:480px;height:480px;border:90px solid rgba(255,210,28,.08);border-radius:50%}
+    .form-control,.form-select{background:#fff;border:1px solid #ddd;border-radius:10px;padding:.95rem 1rem}
+    .form-control:focus,.form-select:focus{border-color:var(--yellow-2);box-shadow:0 0 0 .2rem rgba(255,210,28,.15)}
+    footer{background:#050505;color:#aaa;padding:70px 0 25px}
+    footer h4{color:#fff;font-size:1.3rem}
+    footer a{color:#aaa}
+    footer a:hover{color:var(--yellow)}
+    .social{width:42px;height:42px;border:1px solid #292929;border-radius:50%;display:grid;place-items:center;color:#fff}
+    .social:hover{background:var(--yellow);color:#000;border-color:var(--yellow)}
+    .warning-tape{background:repeating-linear-gradient(135deg,#ffd21c 0,#ffd21c 18px,#111 18px,#111 36px);height:13px}
+    .floating-call{position:fixed;right:20px;bottom:20px;z-index:999;width:58px;height:58px;border-radius:50%;background:var(--yellow);color:#000;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.3);animation:pulse 2.2s infinite}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,210,28,.45)}50%{box-shadow:0 0 0 13px rgba(255,210,28,0)}}
+    .reveal-line{height:3px;width:70px;background:var(--yellow);margin:20px 0}
+    .mini-note{font-size:.78rem;color:#888}
+    @media(max-width:991px){
+      .hero{min-height:auto}.hero-content{padding:90px 0 70px}
+      .navbar .btn-warning-custom{display:none}
+      .section{padding:75px 0}
+      .stat{border-right:0;border-bottom:1px solid var(--line)}
+      .stat:last-child{border-bottom:0}
+    }
+    @media(max-width:575px){
+      .hero h1{font-size:3.45rem}
+      .quote-box{padding:30px 22px}
+      .project-img,.before-after img{height:270px}
+    }
+  
+/* Visibility / premium UI refinements */
+.card-premium .card-body-custom{background:#fff!important;color:#111!important}
+.card-premium h3{color:#111!important;font-weight:800}
+.card-premium p{color:#454545!important}
+.card-premium .text-secondary{color:#454545!important}
+.card-premium a{color:#111!important}
+.card-premium a:hover{color:#9b7600!important}
+.before-after{position:relative}
+.before-after .comparison-card{position:relative;overflow:hidden;border-radius:18px}
+.before-after .comparison-card img{display:block}
+.before-after .comparison-label{
+  position:absolute;left:16px;top:16px;z-index:4;
+  background:#ffd21c;color:#070707;padding:8px 14px;border-radius:7px;
+  font-family:"Barlow Condensed",sans-serif;font-size:1.15rem;font-weight:800;
+  text-transform:uppercase;letter-spacing:.03em;box-shadow:0 8px 20px rgba(0,0,0,.22)
+}
+.before-after .comparison-card:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.12),transparent 35%,rgba(0,0,0,.2))
+}
+.google-review-card{
+  background:#fff;border:1px solid #e4e4e4;border-radius:18px;padding:26px;
+  height:100%;box-shadow:0 8px 28px rgba(0,0,0,.06);transition:.3s
+}
+.google-review-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(0,0,0,.12)}
+.google-head{display:flex;align-items:center;gap:12px}
+.google-avatar{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#f0f0f0;font-weight:800;color:#555}
+.google-logo{font-size:1.15rem;font-weight:800;color:#4285f4}
+.google-review-card .stars{color:#fbbc04;letter-spacing:1px;font-size:.9rem}
+.google-review-card .review-date{font-size:.72rem;color:#777}
+.google-review-card p{color:#444;line-height:1.7;margin:16px 0 0}
+.menu-icon{font-size:.75rem;color:#ffd21c;margin-right:6px}
+.hero-poster-fallback{position:absolute;inset:0;background:url("https://greatgaragefloors4u.com/wp-content/uploads/2026/06/IMG_3953-scaled.jpeg") center/cover no-repeat;z-index:0}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.72}
+.hero:before{z-index:1!important;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.70) 48%,rgba(0,0,0,.32) 100%)!important;filter:none!important}
+.hero:after{z-index:1}
+@media(max-width:767px){.google-review-card{padding:22px}}
+
+  </style>
+</head>
+<body>
+
+<div class="topbar py-2">
+  <div class="container d-flex justify-content-center justify-content-md-between align-items-center gap-3">
+    <span><i class="fa-solid fa-triangle-exclamation me-1"></i> 5-Star-Rated Garage Floor Specialists</span>
+    <a href="tel:9524738600"><i class="fa-solid fa-phone me-1"></i> 952-473-8600</a>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+  <div class="container py-2">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span>
+      GREAT GARAGE FLOORS 4 U
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#about"><i class="fa-solid fa-circle-info menu-icon"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services"><i class="fa-solid fa-layer-group menu-icon"></i>Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#process"><i class="fa-solid fa-list-check menu-icon"></i>Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work"><i class="fa-solid fa-images menu-icon"></i>Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq"><i class="fa-solid fa-circle-question menu-icon"></i>FAQ</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-warning-custom" href="#quote">Get Free Estimate <i class="fa-solid fa-arrow-right ms-1"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  
+<video class="hero-video" autoplay muted loop playsinline preload="metadata"
+  poster="https://greatgaragefloors4u.com/wp-content/uploads/2026/06/IMG_3953-scaled.jpeg"
+  aria-hidden="true">
+  <source src="https://greatgaragefloors4u.com/wp-content/uploads/2026/06/garage-floor-coating.mp4" type="video/mp4">
+</video>
+
+  <div class="hero-poster-fallback" aria-hidden="true"></div><div class="container hero-content">
+    <div class="row">
+      <div class="col-xl-9 col-lg-10" data-aos="fade-up">
+        <div class="eyebrow">Garage Floor Coating Experts</div>
+        <h1>Give Your Garage A <span>Clean, Durable</span> Finish.</h1>
+        <p>High-strength floor coatings designed to resist wear, stains, and heavy traffic for years. From cracks to coatings, we deliver a complete garage floor makeover.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a class="btn btn-warning-custom" href="#quote">Request A Free Quote <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          <a class="btn btn-dark-outline" href="#work">View Our Projects <i class="fa-solid fa-images ms-2"></i></a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge-dark"><i class="fa-solid fa-shield-halved text-warning me-2"></i>10 Year Adhesion Guarantee</span>
+          <span class="badge-dark"><i class="fa-solid fa-star text-warning me-2"></i>5-Star Rated</span>
+          <span class="badge-dark"><i class="fa-solid fa-location-dot text-warning me-2"></i>Twin Cities</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warning-tape"></div>
+
+<section class="stats-strip">
+  <div class="container">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-lg-3"><div class="stat"><strong>15+</strong><span>Years of Industry Expertise</span></div></div>
+      <div class="col-6 col-lg-3"><div class="stat"><strong>10</strong><span>Year Adhesion Warranty</span></div></div>
+      <div class="col-6 col-lg-3"><div class="stat"><strong>100%</strong><span>Solid / Surface-Focused System</span></div></div>
+      <div class="col-6 col-lg-3"><div class="stat"><strong>250+</strong><span>Clients · 231 Reviews</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="section-kicker">About Great Garage Floors</div>
+        <h2 class="section-title">Refined Garage Floor Coating Services Across Twin Cities.</h2>
+        <div class="reveal-line"></div>
+        <p class="section-copy">A garage should feel clean, durable, and ready for daily use. For over 15 years, Great Garage Floors has helped turn worn, aging concrete into strong, polished surfaces that hold up through constant activity.</p>
+        <p class="section-copy">As a trusted garage floor specialist, each project reflects a commitment to detail and long-term performance. Every installation follows a carefully applied multi-layer system designed to resist stains, cracks, and surface wear while maintaining a clean, finished look.</p>
+        <a href="#quote" class="btn btn-dark px-4 py-3 text-uppercase fw-bold mt-2">Contact Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="position-relative">
+          <img src="https://greatgaragefloors4u.com/wp-content/uploads/2026/06/IMG_3953-scaled.jpeg" class="img-fluid rounded-4 shadow-lg" alt="Finished garage floor coating">
+          <div class="position-absolute bottom-0 start-0 translate-middle-y ms-3 bg-warning p-3 rounded-3 fw-bold text-dark">
+            <i class="fa-solid fa-circle-check me-2"></i>Quality First
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section section-dark">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-8">
+        <div class="section-kicker">Our Services</div>
+        <h2 class="section-title">Quality Flooring Services Done Right.</h2>
+        <p class="section-copy">Professional installation and repair work built around preparation, adhesion, protection and a clean finished look.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="card-premium">
+          <img class="service-img" src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/IMG_1685-1024x768.jpg" alt="Garage floor installation">
+          <div class="card-body-custom">
+            <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Garage Floor Installation</h3>
+            <p class="text-secondary mb-4">A complete multi-layer garage floor coating system with careful preparation, epoxy adhesion, full flake broadcast and a protective wearcoat.</p>
+            <a href="#process" class="fw-bold text-dark text-uppercase">Learn More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-premium">
+          <img class="service-img" src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/IMG_1303-1024x768.jpg" alt="Garage floor repair and refinishing">
+          <div class="card-body-custom">
+            <div class="icon-box"><i class="fa-solid fa-hammer"></i></div>
+            <h3>Garage Floor Repairs</h3>
+            <p class="text-secondary mb-4">Repair damaged concrete and existing coatings before applying a durable new coating system for a clean, renewed garage surface.</p>
+            <a href="#process" class="fw-bold text-dark text-uppercase">Learn More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="section section-dark pt-0">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-12 mb-3">
+        <div class="section-kicker">Our Process</div>
+        <h2 class="section-title">Built Around Proper Preparation.</h2>
+        <p class="section-copy">Our step-by-step installation process ensures your garage floor is properly prepared, coated, and protected for long-term durability, performance, and a clean finished look.</p>
+      </div>
+      <div class="col-md-6 col-xl-4" data-aos="fade-up"><div class="process-card"><div class="step">01</div><h3>Consultation & Estimate</h3><p>We begin with an on-site visit to inspect the concrete, review color options, and provide a clear estimate.</p></div></div>
+      <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50"><div class="process-card"><div class="step">02</div><h3>Garage Preparation</h3><p>To help us work efficiently, the garage floor is fully cleared for complete access during installation.</p></div></div>
+      <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100"><div class="process-card"><div class="step">03</div><h3>Surface Grinding & Repair</h3><p>We grind the concrete and repair cracks to create a strong, properly prepared surface for adhesion.</p></div></div>
+      <div class="col-md-6 col-xl-4" data-aos="fade-up"><div class="process-card"><div class="step">04</div><h3>Base Coat Installation</h3><p>A base coat is applied to seal the concrete surface and strengthen adhesion for the next layer.</p></div></div>
+      <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50"><div class="process-card"><div class="step">05</div><h3>Full Flake Broadcast</h3><p>We broadcast decorative flakes across the surface to enhance durability and achieve a uniform finish.</p></div></div>
+      <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100"><div class="process-card"><div class="step">06</div><h3>Protective Wearcoat</h3><p>We apply a durable polyaspartic or polyurethane protective topcoat to seal the surface, enhance gloss, and protect against stains, scratches, UV damage and daily wear.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-8">
+        <div class="section-kicker">Our Work</div>
+        <h2 class="section-title">See The Floors We've Transformed.</h2>
+        <p class="section-copy">Our coating system turns old, stained concrete into beautiful, durable floors.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6"><div class="project-wrap"><img class="project-img" src="https://greatgaragefloors4u.com/wp-content/uploads/2026/06/IMG_3953-scaled.jpeg" alt="Garage floor transformation"><div class="project-label">Garage Floor Transformation</div></div></div>
+      <div class="col-md-6"><div class="project-wrap"><img class="project-img" src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/IMG_1685-1024x768.jpg" alt="Clean durable floor finish"><div class="project-label">Clean, Durable Floor Finish</div></div></div>
+      <div class="col-md-6"><div class="project-wrap"><img class="project-img" src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/IMG_1303-1024x768.jpg" alt="Professional epoxy coating"><div class="project-label">Professional Epoxy Coating</div></div></div>
+      <div class="col-md-6"><div class="project-wrap"><img class="project-img" src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/after.png" alt="Seamless garage floor upgrade"><div class="project-label">Seamless Garage Floor Upgrade</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-yellow">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="section-kicker text-dark">Before & After</div>
+        <h2 class="section-title">A Floor That Looks Like New.</h2>
+        <p class="lead">Our coating system turns old, stained concrete into a beautiful, durable finished surface.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3 before-after">
+          <div class="col-6"><div class="small fw-bold text-uppercase mb-2">Before</div><img src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/before.png" alt="Before garage floor coating"></div>
+          <div class="col-6"><div class="small fw-bold text-uppercase mb-2">After</div><img src="https://greatgaragefloors4u.com/wp-content/uploads/2026/04/after.png" alt="After garage floor coating"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="section-kicker">Our Benefits</div>
+        <h2 class="section-title">Our Garage Floor Coatings Make A Difference.</h2>
+        <p class="section-copy">Designed for residential garages where durability, maintenance and appearance all matter.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="benefit"><i class="fa-solid fa-shield-halved"></i><div><h4>Built to Last</h4><p>Handles daily use, weight, and surface impact while maintaining strength over time.</p></div></div>
+        <div class="benefit"><i class="fa-solid fa-broom"></i><div><h4>Easy to Maintain</h4><p>A smooth, sealed surface allows for quick, easy cleaning.</p></div></div>
+        <div class="benefit"><i class="fa-solid fa-wand-magic-sparkles"></i><div><h4>Clean, Modern Look</h4><p>Custom flake blends create a clean, polished surface that enhances the entire space.</p></div></div>
+        <div class="benefit"><i class="fa-solid fa-droplet-slash"></i><div><h4>Protection That Holds</h4><p>Designed to resist spills, stains, and surface damage from everyday use.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-8">
+        <div class="section-kicker">Customer Reviews</div>
+        <h2 class="section-title">What Customers Say.</h2>
+        <p class="section-copy">250+ clients · 231 reviews</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-inline-flex align-items-center gap-3 p-3 bg-white border rounded-4">
+          <i class="fa-brands fa-google google-logo"></i>
+          <div class="text-start"><div class="fw-bold">Google Reviews</div><div class="small text-secondary">5.0 <span class="text-warning">★★★★★</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4"><div class="google-review-card"><div class="google-head"><div class="google-avatar">R</div><div><strong>Ronald G.</strong><div><span class="stars">★★★★★</span> <span class="review-date">Recent review</span></div></div><i class="fa-brands fa-google google-logo ms-auto"></i></div><p>Epoxy garage floors.</p><div class="small text-secondary">Excelsior · Approx. cost: $6000</div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="google-review-card"><div class="google-head"><div class="google-avatar">R</div><div><strong>Robert H.</strong><div><span class="stars">★★★★★</span> <span class="review-date">Recent review</span></div></div><i class="fa-brands fa-google google-logo ms-auto"></i></div><p>Remove old garage floor coating and install new coating.</p><div class="small text-secondary">Wayzata · Approx. cost: $6000</div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="google-review-card"><div class="google-head"><div class="google-avatar">P</div><div><strong>Peter M.</strong><div><span class="stars">★★★★★</span> <span class="review-date">Recent review</span></div></div><i class="fa-brands fa-google google-logo ms-auto"></i></div><p>Great Garage Floors coated my garage floor to a nonslip surface.</p><div class="small text-secondary">Plymouth · Approx. cost: $3300</div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="google-review-card"><div class="google-head"><div class="google-avatar">J</div><div><strong>Jessica D.</strong><div><span class="stars">★★★★★</span> <span class="review-date">Recent review</span></div></div><i class="fa-brands fa-google google-logo ms-auto"></i></div><p>Remove old coating, apply new epoxy and poly coating on garage floor with repair of concrete damage.</p><div class="small text-secondary">Dayton · Approx. cost: $7000</div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="google-review-card"><div class="google-head"><div class="google-avatar">T</div><div><strong>Timothy M.</strong><div><span class="stars">★★★★★</span> <span class="review-date">Recent review</span></div></div><i class="fa-brands fa-google google-logo ms-auto"></i></div><p>Epoxy garage floor installation.</p><div class="small text-secondary">Ramsey · Approx. cost: $6400</div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="google-review-card"><div class="google-head"><div class="google-avatar">G</div><div><strong>Gregory C.</strong><div><span class="stars">★★★★★</span> <span class="review-date">Recent review</span></div></div><i class="fa-brands fa-google google-logo ms-auto"></i></div><p>Great Garage Floors resurfaced garage floors with epoxy coating.</p><div class="small text-secondary">Long Lake · Approx. cost: $5000</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section pt-0">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="section-kicker">FAQ's</div>
+        <h2 class="section-title">Frequently Asked Questions.</h2>
+        <p class="section-copy">Answers to common questions about garage floor coating, timing and the installation approach.</p>
+      </div>
+      <div class="col-lg-7 faq">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">What is garage floor coating, and why should I consider it?</button></h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Benefits include enhanced durability and protection, improved appearance, easier maintenance, chemical resistance, a slip-resistant surface and dust reduction.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">How long does the garage floor coating process take?</button></h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The coating process usually takes 2 days. You can walk on it next day, place items on the second day, and drive on the third day.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Do you offer one-day garage floors?</button></h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No. Great Garage Floors focuses on proper preparation and curing for long-term durability.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">Will a coated garage floor turn yellow in sunlight?</button></h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The site explains that UV-resistant materials are used to help limit yellowing caused by sunlight exposure and keep the floor looking consistent.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="section section-yellow">
+  <div class="container">
+    <div class="quote-box">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 position-relative">
+          <div class="section-kicker text-warning">Get In Touch</div>
+          <h2 class="section-title">Request A Free Quote.</h2>
+          <p class="text-secondary">Submit the form below or call us at <a href="tel:9524738600" class="text-warning fw-bold">952-473-8600</a>.</p>
+          <div class="mt-4">
+            <div class="d-flex gap-3 align-items-center mb-3"><i class="fa-solid fa-phone text-warning"></i><span>952-473-8600</span></div>
+            <div class="d-flex gap-3 align-items-center"><i class="fa-solid fa-envelope text-warning"></i><span>mike@greatgaragefloors4u.com</span></div>
+          </div>
+        </div>
+        <div class="col-lg-7 position-relative">
+          <form id="quoteForm" class="row g-3">
+            <div class="col-md-6"><label class="form-label small fw-bold">First Name</label><input class="form-control" required type="text" placeholder="First Name"></div>
+            <div class="col-md-6"><label class="form-label small fw-bold">Last Name</label><input class="form-control" required type="text" placeholder="Last Name"></div>
+            <div class="col-md-6"><label class="form-label small fw-bold">Email</label><input class="form-control" required type="email" placeholder="Email Address"></div>
+            <div class="col-md-6"><label class="form-label small fw-bold">Phone</label><input class="form-control" required type="tel" placeholder="Phone Number"></div>
+            <div class="col-12"><label class="form-label small fw-bold">Tell us about your garage</label><textarea class="form-control" rows="4" placeholder="Project details"></textarea></div>
+            <div class="col-12"><button class="btn btn-warning-custom w-100 py-3" type="submit">Submit Request <i class="fa-solid fa-paper-plane ms-2"></i></button></div>
+            <div id="formMessage" class="col-12 small text-warning d-none">Thanks! Your request has been captured in this demo form. Connect it to your CRM/email endpoint before launch.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="navbar-brand mb-3"><span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span> GREAT GARAGE FLOORS 4 U</div>
+        <p class="lh-lg">Welcome to Great Garage Floors where we specialize in transforming ordinary garage floors into extraordinary spaces. With our expertise and dedication to quality, we provide top-notch solutions that enhance the look, functionality and durability of your garage.</p>
+        <div class="d-flex gap-2 mt-4">
+          <a class="social" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social" href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+          <a class="social" href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Important Links</h4>
+        <ul class="list-unstyled lh-lg">
+          <li><a href="#">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#quote">Contact</a></li><li><a href="#faq">FAQ's</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled lh-lg">
+          <li><a href="#work">Our Work</a></li><li><a href="#process">Process</a></li><li><a href="#quote">Get Free Estimate</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4>Contact</h4>
+        <p class="mb-2"><i class="fa-solid fa-phone text-warning me-2"></i><a href="tel:9524738600">952-473-8600</a></p>
+        <p class="mb-2"><i class="fa-solid fa-envelope text-warning me-2"></i><a href="mailto:mike@greatgaragefloors4u.com">mike@greatgaragefloors4u.com</a></p>
+        <p><i class="fa-solid fa-location-dot text-warning me-2"></i>1230 Orono Oaks Drive, Orono, MN 55356</p>
+        <p class="mini-note mb-2"><i class="fa-regular fa-clock text-warning me-2"></i>Monday to Friday 7:00 am – 6:00 pm</p><p class="mini-note mb-0"><i class="fa-solid fa-shield-halved text-warning me-2"></i>10 Year Adhesion Guarantee · Professional Garage Floor Coatings</p>
+      </div>
+    </div>
+    <hr class="border-secondary my-5">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+      <span>© 2026 GreatGarageFloors4U</span>
+      <span>Premium responsive concept built with Bootstrap 5.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="floating-call" href="tel:9524738600" aria-label="Call Great Garage Floors 4 U"><i class="fa-solid fa-phone"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({duration:800, once:true, offset:70});
+
+  document.querySelector("#quoteForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.querySelector("#formMessage").classList.remove("d-none");
+  });
+</script>
+</body>
+</html>
